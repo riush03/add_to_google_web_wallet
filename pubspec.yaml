@@ -1,5 +1,7 @@
 name: add_to_google_web_wallet
-description: "A new Flutter project."
+description: package that allows you to create add to google wallet button, for web platform.
+repository: https://github.com/riush03/add_to_google_web_wallet
+issue_tracker: https://github.com/riush03/add_to_google_web_wallet/issues
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -16,7 +18,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 1.0.0+1
+version: 0.0.1
 
 environment:
   sdk: '>=3.3.0 <4.0.0'
@@ -60,10 +62,14 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
+  plugin:
+    platforms:
+      android:
+        package: com.dennotech.add_to_google_web_wallet
+        pluginClass: AddToGoogleWebWalletPlugin
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/svg/buttons/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
