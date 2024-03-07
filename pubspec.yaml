@@ -21,7 +21,8 @@ issue_tracker: https://github.com/riush03/add_to_google_web_wallet/issues
 version: 0.0.1
 
 environment:
-  sdk: '>=1.10.0 <4.0.0'
+  sdk: '>=>=2.18.4  <4.0.0'
+  flutter: ">=2.5.0"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
