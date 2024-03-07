@@ -24,12 +24,12 @@ dependencies:
 
 or run this command:
 ```zsh
-flutter pub add add_to_google_wallet 
+flutter pub add add_to_google_web_wallet 
 ```
 
 ### Example usage
 ```dart
-import 'package:add_to_google_wallet/widgets/add_to_google_wallet_button.dart';
+import 'package:add_to_google_wallet/widgets/add_to_google_web_wallet_button.dart';
 import 'package:flutter/material.dart';
 import 'package:uuid/uuid.dart';
 ```
