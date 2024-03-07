@@ -12,7 +12,7 @@ const String _packagePrefix = 'packages/add_to_google_web_wallet/';
 const String _buttonPathPrefix = 'assets/svg/buttons/';
 const String _buttonPathSuffix = '_add_to_google_wallet_wallet-button.svg';
 
-class AddToGoogleWalletButton extends StatelessWidget {
+class AddToGoogleWebWalletButton extends StatelessWidget {
   /// [Generic pass JSON Object](https://developers.google.com/wallet/generic/android#1_create_a_passes_object)
   ///
   /// [Google codelab example](https://codelabs.developers.google.com/add-to-wallet-android#5)
@@ -35,7 +35,7 @@ class AddToGoogleWalletButton extends StatelessWidget {
   /// Called when a user canceled process of adding a pass to the Google Wallet
   final VoidCallback? onCanceled;
 
-  const AddToGoogleWalletButton({
+  const AddToGoogleWebWalletButton({
     super.key,
     this.locale,
     this.onError,
@@ -66,10 +66,9 @@ class AddToGoogleWalletButton extends StatelessWidget {
           Positioned.fill(
             child: Material(
               color: Colors.transparent,
-              child: InkWell(
-                onTap: _onAddToGoogleWalletTap,
-                borderRadius:
-                    const BorderRadius.all(Radius.circular(_buttonRadius)),
+              child: RawMaterialButton(
+                onPressed: onPressed,
+                padding: const EdgeInsets.all(_buttonRadius),
               ),
             ),
           ),
