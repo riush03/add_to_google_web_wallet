@@ -8,7 +8,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 const double _buttonRadius = 24.5;
 const String _defaultLanguageCode = 'en';
 const String _defaultCountryCode = 'US';
-const String _packagePrefix = 'packages/add_to_google_wallet/';
+const String _packagePrefix = 'packages/add_to_google_web_wallet/';
 const String _buttonPathPrefix = 'assets/svg/buttons/';
 const String _buttonPathSuffix = '_add_to_google_wallet_wallet-button.svg';
 
@@ -77,7 +77,7 @@ class AddToGoogleWalletButton extends StatelessWidget {
       );
 
   void _onAddToGoogleWalletTap() => AddToGoogleWebWallet().saveLoyaltyPass(
-        pass: onPressed,
+        onPressed: onPressed,
         onError: onError,
         onSuccess: onSuccess,
         onCanceled: onCanceled,
