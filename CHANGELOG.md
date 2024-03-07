@@ -1,3 +1,5 @@
+## 0.0.3
+- Resolve Package Version Errors
 ## 0.0.2
 - Resolve Errors
 
