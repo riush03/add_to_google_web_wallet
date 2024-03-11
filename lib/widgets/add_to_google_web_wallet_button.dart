@@ -1,6 +1,6 @@
 import 'dart:ui' as ui;
 
-import 'package:add_to_google_web_wallet/add_to_google_web_wallet.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -75,12 +75,7 @@ class AddToGoogleWebWalletButton extends StatelessWidget {
         ],
       );
 
-  void _onAddToGoogleWalletTap() => AddToGoogleWebWallet().saveLoyaltyPass(
-        onPressed: onPressed,
-        onError: onError,
-        onSuccess: onSuccess,
-        onCanceled: onCanceled,
-      );
+
 
   Future<String> _getButtonAssetPath(BuildContext context) async {
     final String languageCode =
